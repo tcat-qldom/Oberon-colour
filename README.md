@@ -6,6 +6,24 @@ But changing it, would invalidate clients, requiring all modules rebuild hanging
 
 The resolution is operated with switch SW[6]= 0(1-bit) | 1(4-bit).
 
+
+**Supported h/w**
+
+PO2013 specficication FPGA boards.
+Saanlima flavour of FFPGA boards, Pepino, Pistperello, etc. 
+
+**How to install**
+
+There are two files attached, RISC5.FS with compressed Oberon file system, and RISC5.bit processor bit image.
+With your spare uSD card inserted, recognised as /dev/sdX, where X stands for the drive letter.
+
+	$ dmesg | tail # shows drive /dev/sdX
+	$ dd if=RISC5.FS of=/dev/sdX bs=1024 seek=262145
+
+Boot with synthesis bit image.
+
+	$ fpgaprog -f RISC5.bit
+
 **Limits**
 
 	CONST black* = 0; white* = 1(*5*); 
@@ -55,7 +73,7 @@ This version advances the clock, you may inspect by clicking System.Date. The cl
 Please see other repository here.
 Have fun!
 
-
+**:-)**
 
 ![RGB](Oberon-Band.png?raw=true "Band")
 
