@@ -33,7 +33,7 @@ Boot with synthesis bit image.
 
 The coulour map has 16 entries, and can be manipulated at addresses {-68..-128}, for 1-bit colour only these two are in effect {-68,-72}
 
-**Coulour Map**
+**Colour Map**
   
 	PROCEDURE Map*;
 	  CONST ms = -128; me = -68;
