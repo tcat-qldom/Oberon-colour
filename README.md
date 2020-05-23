@@ -9,8 +9,7 @@ The resolution is operated with switch SW[6]= 0(1-bit) | 1(4-bit).
 
 **Supported h/w**
 
-PO2013 specficication FPGA boards.
-Saanlima flavour of FFPGA boards, Pepino, Pistperello, etc. 
+PO2013 specification FPGA board. Original OberonStation board, Saanlima flavour of FPGA boards, Pepino, Pistperello, etc. 
 
 **How to install**
 
@@ -37,12 +36,12 @@ The coulour map has 16 entries, and can be manipulated at addresses {-68..-128},
 **Coulour Map**
   
 	PROCEDURE Map*;
-	CONST ms = -128; me = -68;
-	VAR a, n: INTEGER;
+	  CONST ms = -128; me = -68;
+	  VAR a, n: INTEGER;
 	BEGIN
-	FOR a := ms TO me BY 4 DO
-	SYSTEM.GET(a, n); O.Hex(n); O.Ln
-	END
+	  FOR a := ms TO me BY 4 DO
+	    SYSTEM.GET(a, n); O.Hex(n); O.Ln
+	  END
 	END Map;
 
 **The broad band**
