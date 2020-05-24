@@ -9,7 +9,7 @@ The resolution is operated with switch SW[6]= 0(1-bit) | 1(4-bit).
 
 **Supported h/w**
 
-PO2013 specification FPGA board. Original OberonStation board, Saanlima flavour of FPGA boards, Pepino, Pistperello, etc. 
+PO2013 specification FPGA board. Original OberonStation board, Saanlima flavour of FPGA boards, Pepino, Pistpirello, etc. 
 
 **How to install**
 
@@ -74,8 +74,4 @@ Have fun!
 
 **:-)**
 
-![RGB](Oberon-Band.png?raw=true "Band")
-
-# Oberon simple drawing primitives
-
-![RGB](Oberon-Graph.png?raw=true "Graph")
+![RGB](Oberon-Colour.png?raw=true "Band")
