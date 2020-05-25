@@ -9,17 +9,19 @@ The resolution is operated with switch SW[6]= 0(1-bit) | 1(4-bit).
 
 **Supported h/w**
 
-PO2013 specification FPGA board. Original OberonStation board, Saanlima flavour of FPGA boards, Pepino, Pistpirello, etc. 
+As per PO2013 h/w specification, OberonStation board, Saanlima flavour of boards, Pepino, Pistpirello, etc.
+
+FPGA board with 1MB SRAM(10ns) 256Kx32, MicroSD slot, PS/2 mouse keyboard ports, 8 LEDs, 8[4] switches, 8-pin SPI port (nRF24L01+ wireless module), RS232, 12-pin port (4 buttons, 8 GPIO), VGA, JTAG (USB).
 
 **How to install**
 
-There are two files attached, RISC5.FS with compressed Oberon file system, and RISC5.bit processor bit image.
+There are two files needed, RISC5.FS with compressed Oberon file system, and RISC5.bit processor image for a specific board.
 With your spare uSD card inserted, recognised as /dev/sdX, where X stands for the drive letter.
 
 	$ dmesg | tail # shows drive /dev/sdX
 	$ dd if=RISC5.FS of=/dev/sdX bs=1024 seek=262145
 
-Boot with synthesis bit image.
+Boot with synthesis bit image for your board e.g.
 
 	$ fpgaprog -f RISC5.bit
 
