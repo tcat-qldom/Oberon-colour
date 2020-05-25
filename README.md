@@ -11,7 +11,7 @@ The resolution is operated with switch SW[6]= 0(1-bit) | 1(4-bit).
 
 As per PO2013 h/w specification, OberonStation board, Saanlima flavour of boards, Pepino, Pistpirello, etc.
 
-FPGA board with 1MB SRAM(10ns) 256Kx32, MicroSD slot, PS/2 mouse keyboard ports, 8 LEDs, 8[4] switches, 8-pin SPI port (nRF24L01+ wireless module), RS232, 12-pin port (4 buttons, 8 GPIO), VGA, JTAG (USB).
+FPGA board with 1MB SRAM (10ns 256Kx32), MicroSD slot, PS/2 mouse keyboard ports, 8 LEDs, 8[4] switches, 8-pin SPI port (nRF24L01+ wireless module), RS232, 12-pin port (4 buttons, 8 GPIO), VGA, JTAG (USB).
 
 **How to install**
 
